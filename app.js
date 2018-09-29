@@ -12,8 +12,7 @@ const authedClient = new Gdax.AuthenticatedClient(
   apiURI // if you want to demo use 'sandboxURI' instead, highly recommend demo first!
 );
 
-var Schedule = new CronJob('1 * * * * *', function() {// Executes code inside every minute
-
+var Schedule = new CronJob('* * * * * * *', function() {// Executes code inside every second
   authedClient.getAccounts().then(data => {
       // data is key term for response
       // Change the number for other crypto. Go to your api end point for current available options
