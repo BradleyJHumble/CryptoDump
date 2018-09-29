@@ -1,0 +1,29 @@
+{
+  "name": "cryptodump",
+  "version": "1.0.0",
+  "description": "Dumps bitcoin from your coinbase pro account. Runs once a minute, checks if you have more than an 0 balance and if so it will sell the amount. ",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BradleyJHumble/CryptoDump.git"
+  },
+  "keywords": [
+    "Crypto",
+    "Dump",
+    "BTC",
+    "Bitcoin"
+  ],
+  "author": "BradleyJHumble",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/BradleyJHumble/CryptoDump/issues"
+  },
+  "homepage": "https://github.com/BradleyJHumble/CryptoDump#readme",
+  "dependencies": {
+    "cron": "^1.4.1",
+    "gdax": "^0.8.0"
+  }
+}
