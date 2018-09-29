@@ -1,7 +1,7 @@
 {
   "name": "cryptodump",
   "version": "1.0.0",
-  "description": "Dumps bitcoin from your coinbase pro account. Runs once a minute, checks if you have more than an 0 balance and if so it will sell the amount. ",
+  "description": "Dumps bitcoin from your coinbase pro account. Runs once a second, checks if you have more than an 0 balance and if so it will sell the amount. ",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
