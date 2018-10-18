@@ -33,6 +33,7 @@ var Schedule = new CronJob('* * * * * * *', function() {// Executes code inside 
     })
     .catch(error => {
       // handle the error
+    console.log(error); // if error consoles error
     });
 
 }, null, true, 'America/New_York'); // time can be adjusted, but it runs every second so not important unless you want to customize it
