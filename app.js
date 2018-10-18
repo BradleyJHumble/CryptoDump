@@ -19,7 +19,7 @@ var Schedule = new CronJob('* * * * * * *', function() {// Executes code inside 
       console.log(data);
        global.accountBTCamt = data[1].available; // globals are ugly but it fixed a error
       console.log(accountBTCamt);
-      if (global.accountBTCamt > 0) {
+      if (global.accountBTCamt > 0.001) { // coinbase pro's floor sell limit. Must be over amt
 
         const sellParams = {
           type: 'market', // will be filled immediately at availabile prices
